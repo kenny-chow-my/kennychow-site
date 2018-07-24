@@ -5,7 +5,7 @@ theme = "aerial"
 
 [params]
   name = "Kenny Chow"
-  about = "Java | ReactJS | Ruby | API | Security | Web + Mobile "
+  about = "Java | ReactJS | Full Stack | API | Security | Architecture "
   copyright = ""
   #Disable the scrolling background by entering any string for bg_scroll. Enable by leaving bg_scroll empty.
   bg_scroll = "no"
