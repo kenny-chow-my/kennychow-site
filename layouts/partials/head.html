@@ -14,13 +14,13 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
 <link rel="shortcut icon" href="img/favicon.png">
 
-<!-- Twitter Card -->
+<!-- Twitter Card
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="{{ if .IsHome }}{{ $.Site.Title }} — {{ $.Site.Params.Subtitle }}{{ else }}{{ .Title }} :: {{ $.Site.Title }} — {{ $.Site.Params.Subtitle }}{{ end }}" />
 <meta name="twitter:description" content="{{ if or (.IsHome) }}{{ $.Site.Params.tagline }}{{ else }}{{ .Summary | plainify }}{{ end }}" />
 <meta name="twitter:site" content="{{ $.Site.Params.twitter }}" />
 <meta name="twitter:creator" content="{{ $.Site.Params.twitter }}" />
-<meta name="twitter:image" content="{{ with .Params.Cover }}{{ $.Site.BaseURL }}css/images/{{ . }}{{ else }}{{ $.Site.BaseURL }}css/images/default.jpg{{ end }}">
+<meta name="twitter:image" content="{{ with .Params.Cover }}{{ $.Site.BaseURL }}css/images/{{ . }}{{ else }}{{ $.Site.BaseURL }}css/images/default.jpg{{ end }}"> -->
 
 <!-- OG data -->
 <meta property="og:locale" content="{{ $.Site.Language.Lang }}" />
