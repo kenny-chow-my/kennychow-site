@@ -1,8 +1,8 @@
 User-agent: *
 Disallow: /css/images/
 
-User-agent: Twitterbot
-Allow: /css/images/
+# User-agent: Twitterbot
+# Allow: /css/images/
 
 User-agent: facebookexternalhit
 Allow: /css/images/
