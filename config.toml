@@ -2,6 +2,7 @@ languageCode = "en-us"
 title = "Kenny Chow"
 baseurl = "https://kenny.chow.my/"
 theme = "aerial"
+enableRobotsTXT = true
 
 [params]
   name = "Kenny Chow"
