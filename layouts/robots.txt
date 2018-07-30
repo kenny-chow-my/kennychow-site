@@ -1,0 +1,32 @@
+User-agent: *
+Disallow: /css/images/
+
+User-agent: Twitterbot
+Allow: /css/images/
+
+User-agent: facebookexternalhit
+Allow: /css/images/
+
+User-agent: LinkedInBot
+Allow: /css/images/
+
+User-agent: Embedly
+Allow: /css/images/
+
+User-agent: Quora Link Preview
+Allow: /css/images/
+
+User-agent: Pinterest
+Allow: /css/images/
+
+User-agent: Slackbot
+Allow: /css/images/
+
+User-agent: ShowyouBot
+Allow: /css/images/
+
+User-agent: vkShare
+Allow: /css/images/
+
+User-agent: outbrain
+Allow: /css/images/
