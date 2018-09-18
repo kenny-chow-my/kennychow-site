@@ -6,7 +6,7 @@ enableRobotsTXT = true
 
 [params]
   name = "Kenny Chow"
-  about = "Java | ReactJS | Full Stack | API | Security | Architecture "
+  about = "Java | ReactJS | Full Stack | API | Security | Architecture | 程序员 "
   copyright = ""
   #Disable the scrolling background by entering any string for bg_scroll. Enable by leaving bg_scroll empty.
   bg_scroll = "no"
