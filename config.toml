@@ -5,7 +5,7 @@ theme = "aerial"
 enableRobotsTXT = true
 
 [params]
-  name = "Kenny Chow"
+  name = "Kenny Chow (DEVELOP branch)"
   about = "Java | ReactJS | Full Stack | API | Security | Architecture | 程序员 | 容器编排"
   copyright = ""
   #Disable the scrolling background by entering any string for bg_scroll. Enable by leaving bg_scroll empty.
