@@ -7,7 +7,7 @@ enableRobotsTXT = true
 [params]
   name = "Kenny Chow (DEVELOP branch)"
   about = "Java | ReactJS | Full Stack | API | Security | Architecture | 程序员 | 容器编排"
-  copyright = ""
+  copyright = "2018"
   #Disable the scrolling background by entering any string for bg_scroll. Enable by leaving bg_scroll empty.
   bg_scroll = "no"
   favicon = "favicon.ico"
