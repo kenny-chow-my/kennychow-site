@@ -186,7 +186,8 @@
 		transform: translate3d(0,0,0);
 	/* Set your background with this */
 
-	background: #FF8529 url("images/banner.png") bottom left no-repeat;	
+		background-image: url("images/banner.png");
+		background-color:  #FF8529;
 		/*
     background: #348cb2 url("images/bg.jpg") bottom left;
 		background-repeat: repeat-x;
@@ -268,9 +269,9 @@
 	}
 
 	#bg {
-		background-size: auto, cover;
+		background-size: cover;
 		/* background-size: 2250px auto; */
-		width: 6750px;
+		width: 100%;
 	}
 
 /* Overlay */
