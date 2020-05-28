@@ -9,3 +9,9 @@
   to = "https://static.developer.mastercard.com/content/mcapi/blog/api-tough-love/index.social"
   status = 302
   force = true
+
+[[redirects]]
+  from = "/redirckm"
+  to = "https://cheerfulkidsmusic.com/program/"
+  status = 302
+  force = true
