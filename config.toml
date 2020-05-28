@@ -26,3 +26,15 @@ enableRobotsTXT = true
   medium = "LinkedIn"
   icon = "linkedin"
   link = "https://www.linkedin.com/in/kennychow"
+  
+[[redirects]]
+  from = "/redir301"
+  to = "https://static.developer.mastercard.com/content/mcapi/blog/dont-be-a-minimum-viable-product-manager/index.social"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/redir302"
+  to = "https://static.developer.mastercard.com/content/mcapi/blog/api-tough-love/index.social"
+  status = 302
+  force = true
