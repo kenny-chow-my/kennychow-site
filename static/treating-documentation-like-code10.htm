@@ -1,102 +1,24 @@
 
-
-
-
-  
     
-  
-<div class="blog-page"><div class="blog-hero" style="background-color: #EFFAF8;">
-      <img class="blog-hero-image" src="img/blog-hero_docs-as-code.jpg" />
-    </div><div class="blog-cont">
-    <div class="blog-post-cont">
-      <div class="blog-page-title">
-        <h2>Treating Documentation Like Code</h2><h4>This post is a follow on to Kenny Chow’s blog post ‘Rethinking Our Content Strategy’ and focuses  on the technical writer’s perspective of treating documentation like code.</h4></div>
-      <div class="blog-page-info">
-        <div class="blog-authors">
-          <div class="blog-authors-avatar"><img src='/img/author/chrisgooch_blogphoto_bw.JPG' /><div class="blog-author-det">Chris Gooch<div class="blog-date">
-                <span>Feb 14, 2020</span>
-                <span>
-                  <span class="blog-dot-seperate">•</span>
-                  <span>5 min read</span>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div data-component="social-share-select" data-title="Treating Documentation Like Code" data-author='Chris Gooch'></div>
-      </div>
-      <div class="blog-content">
-        <div class="rich-text rich-text__item-margin">
-          <div class="md-content">
-            
+  <html>
+    <head>
+        <title>Mastercard Developers: Treating Documentation Like Code</title>
+        <meta name="description" content="Over recent years the phrase &amp;ldquo;documentation as code&amp;rdquo; has become well known in the technical writing community, especially among writers specializing in software documentation. Essentially, &amp;ldquo;docs as code&amp;rdquo; means creating documentation by utilizing some of the same tools and processes used by software developers, such as: Version control systems like Subversion or Git to enable cross team collaboration and keep track of edits Automated systems to build and deploy content similarly to how Jenkins is used to build and deploy code" />
 
-<p>Over recent years the phrase &ldquo;documentation as code&rdquo; has become well known in the technical writing community, especially among writers specializing in software documentation. Essentially, &ldquo;docs as code&rdquo; means creating documentation by utilizing some of the same tools and processes used by software developers, such as:</p>
+        
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Treating Documentation Like Code">
+        <meta name="twitter:description" content="Over recent years the phrase &amp;ldquo;documentation as code&amp;rdquo; has become well known in the technical writing community, especially among writers specializing in software documentation. Essentially, &amp;ldquo;docs as code&amp;rdquo; means creating documentation by utilizing some of the same tools and processes used by software developers, such as: Version control systems like Subversion or Git to enable cross team collaboration and keep track of edits Automated systems to build and deploy content similarly to how Jenkins is used to build and deploy code">
+        <meta name="twitter:image" content="https://static.developer.mastercard.com/content/mcapi/blog/treating-documentation-like-code/img/blog-hero_docs-as-code.jpg">
 
-<ul>
-<li>Version control systems like <a href="https://en.wikipedia.org/wiki/Apache_Subversion">Subversion</a> or <a href="https://git-scm.com/">Git</a> to enable cross team collaboration and keep track of edits</li>
-<li>Automated systems to build and deploy content similarly to how <a href="https://jenkins.io/">Jenkins</a> is used to build and deploy code</li>
-</ul>
-
-<p><br />
-To some extent this concept is not new. There is a long history of some aspects of documentation being automatically generated from comments in source code. For example:</p>
-
-<ul>
-<li>Class reference documentation for Java can be built from Java source code comments using a tool called <a href="https://en.wikipedia.org/wiki/Javadoc">Javadoc</a></li>
-<li>RESTful web APIs can be documented using Swagger (OpenAPI) specifications in .yaml</li>
-<li>.json files are annotated with descriptions to provide useful reference information</li>
-</ul>
-
-<p><br />
-However, in recent years there has been an explosion in the use of static site generator tools. These tools take content written in a readable format, such as markdown or AsciiDoc, and generate a set of HTML pages that can be hosted on the Web as a static website. This has given technical authors an alternative approach to tools such as Microsoft Word, or Adobe FrameMaker.</p>
-
-<p><br />
-By using a simple markup format to create documentation via a text editor, and by using Git or Subversion for version control, it becomes easier for more people to contribute to documentation. At the same time, this still provides tight control over what gets published. Perhaps because many of the tools and processes are familiar to software engineers, this approach has been embraced by many technology companies. Especially those with a need to create large documentation sites for a developer audience. The use of familiar tools means that technical team can easily contribute to the documentation, thereby helping the technical writers - who will still have a role since most engineers are keen to get on with engineering!</p>
-
-<hr />
-
-<p>Mastercard has embraced this approach for publishing content on <a href="https://developer.mastercard.com/">Mastercard Developers</a>. Previously, all content on Mastercard Developers was stored in a Content Management System (CMS) and edited via a What You See Is What You Get (WYSIWYG) tool running in the browser. This was fine for non-complex content, but frustrating for technical writers creating and maintaining more detailed content. The editor within the CMS was sometimes slow via the browser where there was a slow internet connection, making writing and editing difficult. Equally, there were limitations on the style of content that could be produced. Rather than continue &ldquo;bolting on&rdquo; more content types to the CMS, the Mastercard Developer team embraced the idea of using a new set of tools to allow more flexibility.</p>
-
-<p><br />
-Several static site generator tools were assessed before the decision was made to use <a href="https://gohugo.io/">Hugo</a> (see Kenny Chow’s <a href="/blog/rethinking-our-content-management-strategy/">post</a> for more details). Hugo enable’s authors to create content in any text editor using a standard markdown format in (our writing teams prefer <a href="https://atom.io/">Atom</a>) with material stored in <a href="https://azure.microsoft.com/en-us/services/devops/pipelines/">Azure</a> Git repos. An Azure pipeline then automatically &ldquo;builds&rdquo; the web content from the markdown source and deploys the live site. The output looks good thanks to the &lsquo;theme&rsquo; we developed, and the Hugo output matches the rest of Mastercard Developers. The writing and editing process works well, so the technical writers are happy.</p>
-
-<hr />
-
-<h2 id="in-practice">In Practice</h2>
-
-<ul>
-<li>Content in markdown can be quickly and easily edited offline with no lag</li>
-<li>Changes can be committed and pushed to Git within the text editor Atom</li>
-<li>Hugo can be installed and run locally, so we can view a local version of the content straight away in any browser</li>
-<li>Multiple technical writers can contribute to the content as we operate in Git branches</li>
-<li>Using Git branches also means we can work on upcoming features on a separate branch without risk of overwriting the latest documentation</li>
-<li>Rules can be applied on pull requests so the live site cannot be updated without approval from peers</li>
-<li>Draft branches automatically build branch-specific versions of the content and deploy to our stage environment, so we can share content with other teams for review</li>
-<li>Once a pull request against master branch is approved, the site then builds and deploys in a few seconds</li>
-<li>Documentation created through Hugo is much easier to navigate because we can split the material into a larger number of shorter pages with a full table of contents / menu on the left side</li>
-<li>Easy to see notes/warnings/tips can be added through adding call out boxes</li>
-<li>Nice looking sequence diagrams from UML can be created using a mermaid plugin (see <a href="/blog/automating-diagram-generation-from-text/">post</a> by Paul Bland for more details)</li>
-<li>Broken links can easily be found when the site builds so they can be fixed before deploying/publishing</li>
-</ul>
-
-<hr />
-
-<h2 id="summary">Summary</h2>
-
-<p>Since transitioning to the docs as code model, collaboration and quality as well as speed to deployment has increased massively. We can confidently write documentation for new features, while another team member makes corrections or updates to existing content. We don’t have to worry that edits may get lost and where conflicts between edits arise as Git gives us the ability to compare and merge changes accurately.</p>
-
-          </div>
-        </div>
-      </div>
-      <div class="blog-contri-cont">
-        <h4>Contributors</h4>
-        <div class="blog-contributors"><div class="blog-author">
-                <img src="/img/author/chrisgooch_blogphoto_bw.JPG" />
-                <div class="bio">
-                  <strong>Chris Gooch</strong> &nbsp;is a technical writer based in Sheffield, UK.</div>
-              </div></div>
-      </div>
-      <br >
-      <a class="all-blogs-link link-cta" href="/blog">View all blog posts</a>
-    </div>
-  </div>
-</div>
+        
+        <meta property="og:title" content="Treating Documentation Like Code" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://developer.mastercard.com/blog/treating-documentation-like-code/" />
+        <meta property="og:description" content="Over recent years the phrase &amp;ldquo;documentation as code&amp;rdquo; has become well known in the technical writing community, especially among writers specializing in software documentation. Essentially, &amp;ldquo;docs as code&amp;rdquo; means creating documentation by utilizing some of the same tools and processes used by software developers, such as: Version control systems like Subversion or Git to enable cross team collaboration and keep track of edits Automated systems to build and deploy content similarly to how Jenkins is used to build and deploy code" />
+        <meta property="og:image" content="https://static.developer.mastercard.com/content/mcapi/blog/treating-documentation-like-code/img/blog-hero_docs-as-code.jpg" />
+        <meta property="og:site_name" content="Mastercard Developers:" />
+        <meta property="article:published_time" content="2020-02-14 00:00:00 &#43;0000 UTC}" />
+    </head>
+    <body></body>
+</html>
