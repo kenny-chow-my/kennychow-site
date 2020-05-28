@@ -18,7 +18,13 @@
 
 
 [[redirects]]
-  from = "/redir303"
-  to = "https://static.developer.mastercard.com/content/mcapi/blog/api-tough-love/index.html"
+  from = "/redir304"
+  to = "https://developer.mastercard.com"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/redir305"
+  to = "https://developers.mastercard.com"
   status = 302
   force = true
