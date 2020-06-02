@@ -40,3 +40,10 @@
   to = "https://kenny.chow.my/solutions/index.social.html"
   status = 302
   force = true
+  
+[[redirects]]
+  from = "/redirmcsolutions"
+  to = "https://static.developer.mastercard.com/content/mcapi/case-studies/ing-italy/index.social.html"
+  status = 302
+  force = true
+
