@@ -34,3 +34,9 @@
   to = "https://developers.mastercard.com"
   status = 302
   force = true
+
+[[redirects]]
+  from = "/redirsolutions"
+  to = "https://kenny.chow.my/solutions/index.social.html"
+  status = 302
+  force = true
