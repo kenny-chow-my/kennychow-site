@@ -1,5 +1,6 @@
 const querystring = require('querystring');
 const axios = require('axios');
+const { chown } = require('fs');
 
 exports.handler = async (event, context) => {
 
@@ -37,3 +38,11 @@ exports.handler = async (event, context) => {
         };
 
   };
+
+
+  curl -s --user 'api:4287421da7c0adcdfe21506e41361619-c9746cf8-1d489da7' \
+    https://api.mailgun.net/v3/sandboxdf9da5ee163d428f84539d4f489e1398.mailgun.org/messages \
+    -F from='postmaster@sandboxdf9da5ee163d428f84539d4f489e1398.mailgun.org' \
+    -F to=kenny@chown.my \
+    -F subject='Hello' \
+    -F text='Testing some Mailgun awesomeness!'

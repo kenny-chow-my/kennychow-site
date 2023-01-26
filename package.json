@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/kenny-chow-my/kennychow-site#readme",
   "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
     "axios": "^1.2.4",
     "mailgun-js": "^0.22.0",
     "node-fetch": "^3.3.0",
