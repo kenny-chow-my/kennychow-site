@@ -10,7 +10,7 @@ exports.handler = async (event, context) => {
     const msg = {
       to: to, // Change to your recipient
       from: from, // Change to your verified sender
-      subject: 'Sending with SendGrid is Fun',
+      subject: 'Webhook Triggered',
       text: JSON.stringify(event),
     }
     return sgMail
