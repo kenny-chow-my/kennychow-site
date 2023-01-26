@@ -1,7 +1,7 @@
 const nodemailer = require('nodemailer');
 
 
-exports.handler = async (event, context, callback) => {
+exports.handler = async (event, context) => {
     const from = process.env.from;
     const to = process.env.toemail;
      const msg = {
@@ -24,18 +24,19 @@ exports.handler = async (event, context, callback) => {
      });
  
      try {
-         await transporter.sendMail(msg, (error) => {
-             if (!error) {
-                 callback(null, { statusCode: 200, body: 'Message successfully sent to' + to });
-             } else {
-                 callback(null, { statusCode: 501, body: error });
-             }
- 
-         });
- 
+         const resp = await transporter.sendMail(msg);
+         if (resp) {
+            console.log(resp);
+            return { statusCode: 200, body: 'Message successfully sent to' + to };
+        } else {
+            console.error(resp);
+            return { statusCode: 501, body: error };
+        }
+
      } catch (e) {
- 
-         callback({ statusCode: e.code, body: e });
+        console.error(e);
+         return ({ statusCode: e.code, body: e });
      }
  
+
  };
