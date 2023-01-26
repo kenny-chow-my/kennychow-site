@@ -28,7 +28,7 @@ exports.handler = async function (event, context) {
         else{
             return {
                 statusCode: 200,
-                body: JSON.stringify({ message: "OK" }),
+                body: JSON.stringify({ message: "Sent to " + data.to }),
               };
         }
    });
