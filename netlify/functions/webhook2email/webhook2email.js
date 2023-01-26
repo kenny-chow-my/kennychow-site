@@ -16,7 +16,7 @@ exports.handler = async function (event, context) {
     text: JSON.stringify(event)
     };
 
-   mg.messages().send(data, (error, body) => 
+   await mg.messages().send(data, (error, body) => 
    {
         if (error)
         {
