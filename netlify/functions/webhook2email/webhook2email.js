@@ -2,8 +2,7 @@ const mailgun = require('mailgun-js');
 
 
 
-exports.handler = async function (event, context) {
-
+exports.handler = async (event, context) => {
     const mg = mailgun({
         apiKey: process.env.mgapikey, 
         domain: "sandboxdf9da5ee163d428f84539d4f489e1398.mailgun.org"
@@ -16,7 +15,7 @@ exports.handler = async function (event, context) {
     text: JSON.stringify(event)
     };
 
-   return mg.messages().send(data, (error, body) => 
+   await mg.messages().send(data, (error, body) => 
    {
         if (error)
         {
