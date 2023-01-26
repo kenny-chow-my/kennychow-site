@@ -23,7 +23,7 @@ exports.handler = async (event, context) => {
             return err;
         });
 
-    if (err instanceof Error) {
+    if (resp instanceof Error) {
         return {
             statusCode: 501,
             body: JSON.stringify(error),
