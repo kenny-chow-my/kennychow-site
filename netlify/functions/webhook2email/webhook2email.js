@@ -10,7 +10,7 @@ exports.handler = async function (event, context) {
     });
 
     const data = {
-        from: 'PostMaster <' + process.env.from + '>',
+    from: 'PostMaster <' + process.env.from + '>',
     to: process.env.toemail,
     subject: 'SUBJECT',
     text: JSON.stringify(event)
