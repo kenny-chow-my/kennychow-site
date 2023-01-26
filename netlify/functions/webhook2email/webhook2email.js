@@ -1,7 +1,9 @@
 const mailgun = require('mailgun-js');
 
-exports.handler = function(event, context, callback) 
-{
+
+
+exports.handler = async function (event, context) {
+
     const mg = mailgun({
         apiKey: process.env.mgapikey, 
         domain: "sandboxdf9da5ee163d428f84539d4f489e1398.mailgun.org"
@@ -18,12 +20,15 @@ exports.handler = function(event, context, callback)
    {
         if (error)
         {
-            return console.log(error);
+            return {
+                statusCode: 501,
+                body: JSON.stringify(error),
+            };
         }
-
-        callback(null, {
-            statusCode: 200,
-            body: "Mail sent"
-        });
    });
-}
+
+    return {
+      statusCode: 200,
+      body: JSON.stringify({ message: "OK" }),
+    };
+  };
