@@ -1,7 +1,7 @@
-const querystring = require('nodemailer');
+const nodemailer = require('nodemailer');
 
 
-  exports.handler = async (event, context, callback) => {
+exports.handler = async (event, context, callback) => {
     const from = process.env.from;
     const to = process.env.toemail;
      const msg = {
@@ -16,7 +16,6 @@ const querystring = require('nodemailer');
          host: process.env.MAIL_HOST,
          port: 465,
          secure: false,
- 
          auth: {
              user: process.env.MAIL_USERNAME,
              pass: process.env.MAIL_PASSWORD
