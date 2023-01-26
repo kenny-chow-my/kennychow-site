@@ -15,7 +15,7 @@ exports.handler = async (event, context) => {
     text: JSON.stringify(event)
     };
 
-   await mg.messages().send(data, (error, body) => 
+   const resp = await mg.messages().send(data, (error, body) => 
    {
         if (error)
         {
@@ -31,4 +31,6 @@ exports.handler = async (event, context) => {
               };
         }
    });
+   console.log(resp);
+   return resp;
   };
