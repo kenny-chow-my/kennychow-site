@@ -12,18 +12,15 @@ exports.handler = async (event, context) => {
      };
  
      const transporter = nodemailer.createTransport({
- 
-         host: process.env.MAIL_HOST,
-         port: 465,
-         secure: false,
-         auth: {
-             user: process.env.MAIL_USERNAME,
-             pass: process.env.MAIL_PASSWORD
-         },
- 
-     });
+        service: "Gmail",
+        auth: {
+            user: process.env.MAIL_USERNAME,
+            pass: process.env.MAIL_PASSWORD
+        }
+    });
  
      try {
+        console.log('sending email');
          const resp = await transporter.sendMail(msg);
          if (resp) {
             console.log(resp);
@@ -37,6 +34,5 @@ exports.handler = async (event, context) => {
         console.error(e);
          return ({ statusCode: e.code, body: e });
      }
- 
 
  };
