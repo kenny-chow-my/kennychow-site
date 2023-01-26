@@ -20,6 +20,7 @@ exports.handler = async (event, context) => {
             data: querystring.stringify(data),
             headers: {'content-type': 'application/x-www-form-urlencoded;charset=utf-8'}
         }).catch(function (err) {
+            console.log(err);
             return err;
         });
 
