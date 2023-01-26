@@ -6,7 +6,7 @@ exports.handler = async (event, context) => {
 
     const from = process.env.from;
     const to = process.env.toemail;
-    sgMail.setApiKey(process.env.SENDGRID_API_KEY)
+    sgMail.setApiKey(apiKey)
     const msg = {
       to: to, // Change to your recipient
       from: from, // Change to your verified sender
@@ -29,33 +29,6 @@ exports.handler = async (event, context) => {
             body: JSON.stringify(error),
         };
       })
-
-    const data = {
-        from: process.env.from,
-        to: process.env.toemail,
-        subject: 'Webhook Received',
-        text: 
-    };
-
-    const resp = await axios({
-            method: 'POST',
-            url: `https://api.mailgun.net/v3/${domain}/messages`,
-            auth: { username: "api", password: apiKey },
-            data: querystring.stringify(data),
-            headers: {'content-type': 'application/x-www-form-urlencoded;charset=utf-8'}
-        }).catch(function (err) {
-            console.log(err);
-            return err;
-        });
-
-    if (resp instanceof Error) {
-
-    }
-
-    return {
-        statusCode: 200,
-        body: JSON.stringify({ message: "Sent to " + data.to }),
-        };
 
   };
 
