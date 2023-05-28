@@ -11,9 +11,9 @@ enableRobotsTXT = true
   content = """
   <br><br><h2>PUBLICATIONS</h2><br>
 <ol>
-<li>https://engineering.grab.com/doc-as-code 
-<li>https://developer.mastercard.com/blog/rethinking-our-content-management-strategy/ 
-<li>https://developer.mastercard.com/blog/social-sharing-for-a-single-page-application/ 
+<li><a href='https://engineering.grab.com/doc-as-code'>https://engineering.grab.com/doc-as-code</a>
+<li><a href='https://developer.mastercard.com/blog/rethinking-our-content-management-strategy/'>https://developer.mastercard.com/blog/rethinking-our-content-management-strategy/</a>
+<li><a href='https://developer.mastercard.com/blog/social-sharing-for-a-single-page-application/'>https://developer.mastercard.com/blog/social-sharing-for-a-single-page-application/</a> 
 <li>Patent: Semantic database driven form validation - US 9,424,520
 <li>Patent: Generating challenge response sets utilizing semantic web technology - US 9,497,178
 <li>Patent: Endpoint access manager - US10581861B2
