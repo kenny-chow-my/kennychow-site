@@ -8,6 +8,20 @@ enableRobotsTXT = true
   name = "Kenny Chow"
   about = "Product | Engineer | API | Security | Architecture "
   copyright = ""
+  content = """
+  <hr><h2>PUBLICATIONS</h2><br>
+<ol>
+<li>https://engineering.grab.com/doc-as-code 
+<li>https://developer.mastercard.com/blog/rethinking-our-content-management-strategy/ 
+<li>https://developer.mastercard.com/blog/social-sharing-for-a-single-page-application/ 
+<li>Patent: Semantic database driven form validation - US 9,424,520
+<li>Patent: Generating challenge response sets utilizing semantic web technology - US 9,497,178
+<li>Patent: Endpoint access manager - US10581861B2
+<li>Co-author of IBM RedBook: Integrating IBM Security and SAP Solutions - ISBN 0738436569
+<li>Co-author of IBM RedPaper: A Guide to Authentication Services in IBM Security Access Manager for Enterprise Single Sign-On - REDP-4835-00
+<li>INSIGHT Internet-Sensor Integration for Habitat Monitoring – IEEE WOWMOM.2006.52
+</ol>
+"""
   #Disable the scrolling background by entering any string for bg_scroll. Enable by leaving bg_scroll empty.
   bg_scroll = "no"
   favicon = "favicon.ico"
