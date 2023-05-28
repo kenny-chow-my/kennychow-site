@@ -9,7 +9,7 @@ enableRobotsTXT = true
   about = "Product | Engineer | API | Security | Architecture "
   copyright = ""
   content = """
-  <hr><h2>PUBLICATIONS</h2><br>
+  <br><br><h2>PUBLICATIONS</h2><br>
 <ol>
 <li>https://engineering.grab.com/doc-as-code 
 <li>https://developer.mastercard.com/blog/rethinking-our-content-management-strategy/ 
