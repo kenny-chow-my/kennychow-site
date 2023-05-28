@@ -33,6 +33,7 @@
 					<header id="header">
 						<h1>{{ .Site.Params.name | safeHTML }}</h1>
 						<p>{{ .Site.Params.about | safeHTML }}</p>
+						<p>{{ .Site.Params.content | safeHTML }}</p>
 						<nav>
 							<ul>
 								{{ range .Site.Params.social }}
@@ -42,7 +43,7 @@
 						</nav>
 					</header>
 				
-				<p>{{ .Site.Params.content | safeHTML }}</p>
+				
 
 				<!-- Footer -->
 					<footer id="footer">
